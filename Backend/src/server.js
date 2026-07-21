@@ -1,10 +1,25 @@
-import dotenv from "dotenv";
-import app from "./app.js";
+import "dotenv/config";
 
-dotenv.config();
+import app from "./app.js";
+import connectDB from "./config/database.js";
+import { verifyMailConnection } from "./config/mail.js";
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
-    console.log(`🚀 Server running on port ${PORT}`);
-});
+const startServer = async () => {
+    try {
+        await connectDB();
+
+        await verifyMailConnection();
+        console.log("✅ SMTP Connected");
+
+        app.listen(PORT, () => {
+            console.log(`🚀 Server running on port ${PORT}`);
+        });
+    } catch (error) {
+        console.error(error);
+        process.exit(1);
+    }
+};
+
+startServer();

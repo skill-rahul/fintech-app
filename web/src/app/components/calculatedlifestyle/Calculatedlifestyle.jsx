@@ -1,4 +1,5 @@
 import Creditlimitcard from "./CreditLimitCard";
+import "./Calculated.css";
 
 export default function CalculatedLifestyle() {
   return (

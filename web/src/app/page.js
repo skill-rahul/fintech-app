@@ -1,6 +1,10 @@
 import Header from "./components/header/header";
 import HeroSection from "./components/heroSection/heroSection";
-import Header from "./components/header";
+import CalculatedLifestyle from "./components/calculatedlifestyle/Calculatedlifestyle";
+import ZeroFrictionOnboarding from "./components/ZeroFrictionOnboarding/ZeroFrictionOnboarding";
+import SystemArchitecture from "./components/SystemArchitecture";
+import UnfairAdvantage from "./components/UnfairAdvantage/UnfairAdvantage";
+import FAQ from "./components/FAQ/FAQ";
 import Footer from "./components/footer/Footer"
 
 export default function Page() {
@@ -8,20 +12,12 @@ export default function Page() {
     <>
       <Header />
       <HeroSection />
-    </>
-
-
-
-      <Header />
+      <CalculatedLifestyle />
+      <SystemArchitecture />
+      <UnfairAdvantage />
+      <ZeroFrictionOnboarding />
+      <FAQ />
       <Footer />
     </>
-import CalculatedLifestyle from "./components/calculatedlifestyle/Calculatedlifestyle";
-export default function Home() {
-  return (
-    <>
-    <Header />
-      <CalculatedLifestyle />
-    </>
-    
   );
 }

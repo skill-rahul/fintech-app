@@ -1,0 +1,148 @@
+/* ===========================
+   FAQ SECTION
+=========================== */
+
+.faqSection {
+    margin:0 40px;
+    background: #000000;
+    border-top: 1px solid rgba(255, 255, 255, .08);
+}
+
+/* Container */
+.container {
+    max-width: 100%;
+    margin: auto;
+    padding: 0 24px;
+    padding-bottom: 120px;
+    
+}
+
+/* Section Header */
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.sectionTitle {
+    font-size: clamp(2.5rem, 5vw, 3.8rem);
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.04em;
+    margin-bottom: 16px;
+}  
+
+
+/* ===========================
+   FAQ Wrapper
+=========================== */
+
+.faqWrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* ===========================
+   FAQ Item
+=========================== */
+
+.faqItem {
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+
+/* ===========================
+   Question Button
+=========================== */
+
+.faqQuestion {
+    width: 100%;
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+
+.faqQuestion:hover {
+    color: #D4AF37;
+}
+
+
+/* ===========================
+   Plus Icon
+=========================== */
+
+.icon {
+    font-size: 1.5rem;
+    color: #D4AF37;
+    transition: transform .35s ease;
+}
+
+
+/* ===========================
+   Answer
+=========================== */
+
+.faqAnswer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease;
+    color: #888;
+    line-height: 1;
+    font-size: .95rem;
+}
+
+.faqAnswer p {
+    padding-bottom: 1.5rem;
+}
+
+
+/* ===========================
+   Active State
+=========================== */
+
+.active .faqAnswer {
+  max-height: 250px;
+}
+
+.active .icon {
+    transform: rotate(45deg);
+}
+
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (min-width:768px) {
+
+    .faqSection {
+        padding: 8rem 0;
+    }
+
+    .container {
+        padding: 0 3rem;
+    }
+
+    .faqQuestion {
+        padding: 2rem 0;
+        font-size: 1.25rem;
+    }
+
+    .faqAnswer {
+        font-size: 1rem;
+    }
+
+    .faqAnswer p {
+        padding-bottom: 2rem;
+    }
+}

@@ -1,0 +1,149 @@
+/* ===============================
+   ZERO FRICTION ONBOARDING
+================================ */
+
+.zeroFrictionOnboarding {
+    padding-top: 6rem;
+    background: #000;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
+    padding-bottom: 120px;
+    
+}
+
+/* Section Header */
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.sectionTitle {
+    font-size: clamp(2.5rem, 5vw, 3.8rem);
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.04em;
+    margin-bottom: 16px;
+}
+
+.sectionDescription {
+    max-width: 600px;
+    margin: auto;
+    color: #888;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+/* ===============================
+   TIMELINE WRAPPER
+================================ */
+
+.timelineStepGrid {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+/* Vertical Line */
+.timelineStepGrid::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* ===============================
+   TIMELINE ITEM
+================================ */
+
+.timelineStep {
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+/* Timeline Circle */
+.timelineStep::before {
+    content: "";
+    position: absolute;
+    left: -1.85rem;
+    top: .25rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #000;
+    border: 2px solid #D4AF37;
+    box-shadow: 0 0 15px rgba(212, 175, 55, .5);
+}
+
+/* Step Title */
+.stepTitle {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.04em;
+    margin-bottom: .5rem;
+}
+
+/* Step Description */
+.stepDescription {
+    color: #888;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Featured Step */
+.featuredStep .stepTitle {
+    color: #D4AF37;
+}
+
+.featuredStep::before {
+    background: #D4AF37;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media(min-width:768px) {
+
+    .zeroFrictionOnboarding {
+        padding: 8rem 0;
+    }
+
+    .container {
+        padding: 0 3rem;
+    }
+
+    .timelineStepGrid {
+        padding-left: 2rem;
+    }
+
+    .timelineStep {
+        padding-bottom: 4rem;
+    }
+
+    .timelineStep::before {
+        left: -2.35rem;
+        width: 12px;
+        height: 12px;
+    }
+
+    .stepTitle{
+        font-size: 1.5rem;
+    }
+
+    .sectionHeader {
+        margin-bottom: 50px;
+    }
+
+
+
+}

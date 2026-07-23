@@ -1,7 +1,13 @@
-import Header from "./components/header";
+import SystemArchitecture from "@/components/SystemArchitecture";
+import ZeroFrictionOnboarding from "@/components/ZeroFrictionOnboarding";
+import FAQ from "@/components/FAQ/FAQ";
 
-export default function Home() {
+export default function Page() {
   return (
-    <Header />
+    <>
+      <SystemArchitecture />
+      <ZeroFrictionOnboarding />
+      <FAQ />
+    </>
   );
 }
